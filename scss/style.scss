@@ -15,6 +15,7 @@ $main-yellow: #E8C300;
     border: none;
     padding-top: 15px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 @mixin mainbutton {
@@ -30,6 +31,7 @@ $main-yellow: #E8C300;
     background-color: $main-yellow;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 @mixin yellowline {
@@ -87,6 +89,14 @@ $main-yellow: #E8C300;
                 line-height: 18px;
                 color: #FFFFFF;
                 text-decoration: none; 
+                transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out;
+
+                &:hover {
+                    color: red;
+                    font-size: 15px;
+                    padding-bottom: 2px;
+                }
             }
 
             &:first-child {
@@ -147,6 +157,7 @@ $main-yellow: #E8C300;
             line-height: 20px;
             @include openSans;
             background-color: Transparent;
+            cursor: pointer;
         }
         .active {
             justify-self: end;
@@ -158,6 +169,18 @@ $main-yellow: #E8C300;
         padding-top: 82px;
         display: grid;
         justify-items: center;
+
+        img {
+            cursor: pointer;
+            transition: ease-in-out .5s all;
+            -webkit-transition: ease-in-out .5s all;
+
+            &:hover {
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                 transform: scale(1.2);
+            }
+        }
     }
 }
 
@@ -352,9 +375,6 @@ $main-yellow: #E8C300;
         align-items: center;
         justify-items: center;
 
-        &:not(:first-child) {
-            padding-top:50px;
-        }
     }
 
     .info {
@@ -365,6 +385,10 @@ $main-yellow: #E8C300;
             @include title;
             color: white;
             padding-bottom: 10px;
+
+            p {
+                padding-bottom: 20px;
+            }
 
             &:after {
                 content: '';
@@ -415,7 +439,9 @@ $main-yellow: #E8C300;
         height: 10px;
         
         &-active {
-            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                 transform: scale(1.2);
         }
     }
 }
@@ -467,7 +493,18 @@ $main-yellow: #E8C300;
             padding-left: 40px;
         }
         a {
+            color: black;
             text-decoration: none;
+
+            transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+
+                &:hover {
+                    color: rgb(102, 8, 8);
+                    font-size: 15px;
+                    padding-right: 2px;
+                    padding-left: 2px;
+                }
         }
     }
 

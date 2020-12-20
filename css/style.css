@@ -334,7 +334,13 @@ template {
         font-size: 12px;
         line-height: 18px;
         color: #FFFFFF;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out; }
+        .header-navigation-table a:hover {
+          color: red;
+          font-size: 15px;
+          padding-bottom: 2px; }
       .header-navigation-table:first-child {
         padding-left: 60px; }
       .header-navigation-table:last-child {
@@ -380,7 +386,8 @@ template {
       font-size: 12px;
       line-height: 20px;
       font-family: 'Open Sans', sans-serif;
-      background-color: Transparent; }
+      background-color: Transparent;
+      cursor: pointer; }
     .header-buttons .active {
       justify-self: end;
       background-color: #E8C300; }
@@ -388,6 +395,14 @@ template {
     padding-top: 82px;
     display: grid;
     justify-items: center; }
+    .header-down img {
+      cursor: pointer;
+      transition: ease-in-out .5s all;
+      -webkit-transition: ease-in-out .5s all; }
+      .header-down img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
 
 .information {
   display: grid;
@@ -530,7 +545,8 @@ template {
         color: rgba(51, 51, 51, 0.5);
         border: none;
         padding-top: 15px;
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        cursor: pointer; }
     .bookForm-form button {
       text-transform: uppercase;
       padding-top: 15px;
@@ -544,6 +560,7 @@ template {
       background-color: #E8C300;
       color: white;
       border: none;
+      cursor: pointer;
       width: 100%; }
 
 .special {
@@ -565,8 +582,6 @@ template {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center; }
-    .special .swiper-slide:not(:first-child) {
-      padding-top: 50px; }
   .special .info {
     color: white;
     padding: 0px 80px; }
@@ -579,6 +594,8 @@ template {
       line-height: 48px;
       color: white;
       padding-bottom: 10px; }
+      .special .info-title p {
+        padding-bottom: 20px; }
       .special .info-title:after {
         content: '';
         display: block;
@@ -613,6 +630,8 @@ template {
       width: 10px;
       height: 10px; }
       .special .swiper-pagination-bullet-active {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
         transform: scale(1.2); }
 
 .menu {
@@ -662,7 +681,15 @@ template {
       padding-right: 40px;
       padding-left: 40px; }
     .menu-types a {
-      text-decoration: none; }
+      color: black;
+      text-decoration: none;
+      transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out; }
+      .menu-types a:hover {
+        color: #660808;
+        font-size: 15px;
+        padding-right: 2px;
+        padding-left: 2px; }
   .menu-dishes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -770,7 +797,8 @@ template {
         color: rgba(51, 51, 51, 0.5);
         border: none;
         padding-top: 15px;
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        cursor: pointer; }
     .contact-inputs-message {
       padding-bottom: 10px; }
       .contact-inputs-message input {
@@ -784,6 +812,7 @@ template {
         border: none;
         padding-top: 15px;
         padding-bottom: 15px;
+        cursor: pointer;
         width: 100%;
         padding-bottom: 60px; }
   .contact-footer {
@@ -816,6 +845,7 @@ template {
       background-color: #E8C300;
       color: white;
       border: none;
+      cursor: pointer;
       width: 100%; }
 
 .footer {
@@ -832,3 +862,520 @@ template {
     color: rgba(255, 255, 255, 0.5); }
     .footer p .strong {
       color: #c5b8b8; }
+
+@media only screen and (min-width: 2340px) {
+  .information-image {
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 2040px) {
+  .header {
+    height: 900px; }
+    .header-navigation-table a {
+      font-size: 19px; }
+    .header-name {
+      font-size: 19px; }
+    .header-title {
+      font-size: 60px; }
+      .header-title::after {
+        width: 90px;
+        height: 8px; }
+    .header-buttons button {
+      width: 400px;
+      height: 80px;
+      font-size: 20px; }
+    .header-wheel {
+      left: 47%; }
+    .header-down {
+      padding-bottom: 50px; }
+      .header-down img {
+        width: 80px;
+        height: 80px; }
+  .information {
+    padding-top: 70px; }
+    .information-table {
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 50px; }
+      .information-table-title {
+        padding-top: 90px;
+        font-size: 70px; }
+        .information-table-title p {
+          padding-bottom: 20px; }
+        .information-table-title:after {
+          width: 90px;
+          height: 6px; }
+      .information-table-subtitle {
+        padding-top: 20px;
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 50px; }
+      .information-table-text {
+        letter-spacing: 2px;
+        font-size: 22px;
+        line-height: 1.4; }
+    .information-image img {
+      width: 590px;
+      height: 590px; }
+    .information-image-img1 {
+      top: 0px;
+      left: 230px; }
+  .team h2 {
+    font-size: 40px; }
+  .team-grid {
+    padding-bottom: 70px; }
+    .team-grid-image {
+      margin: 0 auto;
+      padding-top: 50px; }
+      .team-grid-image img {
+        width: 600px;
+        height: 600px; }
+      .team-grid-image-img1 {
+        top: 40px;
+        left: 230px; }
+    .team-grid-table {
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 50px; }
+      .team-grid-table-title {
+        padding-top: 110px;
+        font-size: 70px; }
+        .team-grid-table-title p {
+          padding-bottom: 20px; }
+        .team-grid-table-title:after {
+          width: 90px;
+          height: 6px; }
+      .team-grid-table-subtitle {
+        padding-top: 20px;
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 50px; }
+      .team-grid-table-text {
+        letter-spacing: 2px;
+        font-size: 22px;
+        line-height: 1.4; }
+  .bookForm-photo {
+    margin: 0 auto; }
+    .bookForm-photo img {
+      width: 700px;
+      height: 700px; }
+  .bookForm-form {
+    width: 80%; }
+    .bookForm-form-title {
+      font-size: 60px; }
+    .bookForm-form-inputs {
+      width: 100%; }
+      .bookForm-form-inputs input {
+        height: 80px; }
+    .bookForm-form button {
+      height: 80px; }
+  .special {
+    padding-bottom: 80px; }
+    .special h2 {
+      font-size: 50px;
+      left: 40%; }
+    .special .img {
+      padding-top: 100px;
+      padding-bottom: 100px; }
+      .special .img img {
+        width: 700px;
+        height: 700px; }
+    .special .info {
+      width: 85%;
+      color: white;
+      padding: 0px 80px; }
+      .special .info-title {
+        padding-top: 110px;
+        font-size: 70px; }
+        .special .info-title:after {
+          width: 90px;
+          height: 6px; }
+      .special .info-subtitle {
+        padding-top: 20px;
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 50px; }
+      .special .info-text {
+        padding-bottom: 70px;
+        letter-spacing: 2px;
+        font-size: 22px;
+        line-height: 1.4; }
+  .menu-title {
+    font-size: 60px; }
+  .menu-subtitle {
+    font-size: 26px;
+    width: 800px;
+    line-height: 1.3; }
+  .menu-types {
+    font-size: 20px;
+    margin-bottom: 60px; }
+  .menu-dishes .head {
+    font-size: 28px; }
+  .menu-dishes .bottom {
+    padding-top: 5px;
+    font-size: 20px; }
+  .events h2 {
+    font-size: 24px;
+    left: 43%; }
+  .events-grid-img {
+    margin: 0 auto; }
+    .events-grid-img img {
+      width: 900px;
+      height: 700px; }
+  .events-footer {
+    font-size: 16px;
+    left: 37%; }
+  .photos {
+    height: 500px; }
+  .contact-title {
+    font-size: 52px; }
+  .contact-subtitle {
+    width: 800px;
+    font-size: 26px; }
+  .contact-inputs-main input {
+    height: 70px;
+    font-size: 26px; }
+  .contact-inputs-message input {
+    padding-bottom: 100px;
+    font-size: 26px; }
+  .contact-footer-contacts {
+    font-size: 20px; }
+  .contact-footer button {
+    height: 70px;
+    font-size: 26px; }
+  .footer p {
+    font-size: 24px; } }
+
+@media only screen and (max-width: 2039px) {
+  .bookForm-form {
+    padding-right: 0; }
+    .bookForm-form-title {
+      font-size: 50px; }
+    .bookForm-form-inputs {
+      width: 700px; }
+  .bookForm-photo {
+    margin: 0 auto; }
+  .events h2 {
+    font-size: 20px;
+    left: 42%; } }
+
+@media only screen and (max-width: 1470px) {
+  .information-image img {
+    width: 480px;
+    height: 480px; }
+  .information-image-img1 {
+    left: 34%;
+    top: 35px; }
+    .information-image-img1 img {
+      width: 425px;
+      height: 425px; }
+  .events h2 {
+    font-size: 16px; }
+  .events-grid-img img {
+    width: 600px;
+    height: 500px; }
+  .contact-footer {
+    grid-template-columns: 1fr; }
+    .contact-footer button {
+      height: 70px; }
+    .contact-footer-contacts {
+      font-size: 20px;
+      padding-bottom: 20px;
+      padding-top: 10px; }
+  .footer p {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 1280px) {
+  .header-wheel {
+    left: 43%; }
+  .contact-subtitle {
+    font-size: 20px; }
+  .contact-footer button {
+    font-size: 20px; }
+  .information {
+    grid-template-columns: 1fr; }
+    .information-table {
+      margin: 0 auto;
+      width: 85%; }
+      .information-table-title {
+        padding-top: 0;
+        font-size: 60px;
+        padding-bottom: 30px; }
+        .information-table-title p {
+          padding-bottom: 10px; }
+      .information-table-subtitle {
+        line-height: 1.2;
+        font-size: 28px;
+        padding-bottom: 50px; }
+      .information-table-text {
+        line-height: 1.5;
+        font-size: 21px;
+        padding-bottom: 50px; }
+    .information-image {
+      width: 70%;
+      margin: 0 auto; }
+      .information-image img {
+        margin-left: 50px;
+        width: 70%;
+        height: auto; }
+      .information-image-img1 {
+        width: 80%;
+        left: 34%;
+        top: 47px; }
+  .team h2 {
+    font-size: 50px;
+    padding-bottom: 70px; }
+  .team-grid {
+    grid-template-columns: 1fr; }
+    .team-grid-image {
+      width: 70%;
+      margin: 0 auto; }
+      .team-grid-image img {
+        margin-left: 50px;
+        width: 70%;
+        height: auto; }
+      .team-grid-image-img1 {
+        width: 80%;
+        left: 34%;
+        top: 47px; }
+    .team-grid-table {
+      margin: 0 auto;
+      width: 90%; }
+      .team-grid-table-title {
+        padding-top: 50px;
+        font-size: 47px;
+        padding-bottom: 30px; }
+        .team-grid-table-title p {
+          padding-bottom: 10px; }
+      .team-grid-table-subtitle {
+        line-height: 1.2;
+        font-size: 28px;
+        padding-bottom: 50px; }
+      .team-grid-table-text {
+        line-height: 1.5;
+        font-size: 21px; }
+  .bookForm {
+    grid-template-columns: 1fr; }
+    .bookForm-form {
+      margin: 0 auto;
+      width: 90%; }
+      .bookForm-form-inputs {
+        width: 100%; }
+        .bookForm-form-inputs input {
+          height: 60px; }
+      .bookForm-form button {
+        height: 60px; }
+    .bookForm-photo {
+      display: grid;
+      justify-items: center; }
+      .bookForm-photo img {
+        width: 100%; }
+  .special h2 {
+    font-size: 30px;
+    left: 35%; }
+  .special .swiper-slide {
+    padding-top: 40px;
+    grid-template-columns: 1fr; }
+  .special .info {
+    padding-bottom: 200px; }
+    .special .info-title {
+      font-size: 40px; }
+    .special .info-subtitle {
+      font-size: 26px; }
+    .special .info-text {
+      font-size: 20px;
+      line-height: 1.5; }
+  .menu-dishes {
+    grid-template-columns: 1fr 1fr; }
+  .events h2 {
+    font-size: 40px;
+    left: 22%; }
+  .events-grid {
+    padding-top: 70px;
+    grid-template-columns: 1fr; }
+    .events-grid-img {
+      margin: 0 auto; }
+      .events-grid-img img {
+        width: 100%; } }
+
+@media only screen and (max-width: 992px) {
+  .header-title {
+    font-size: 36px; }
+  .header-wheel {
+    left: 41%; }
+  .photos {
+    grid-template-columns: 1fr 1fr;
+    height: 600px; }
+  .contact-footer-contacts {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .contact-footer-contacts nav {
+      font-size: 25px;
+      padding-bottom: 20px; }
+  .special h2 {
+    left: 28%; }
+  .events h2 {
+    left: 12%; }
+  .menu-types {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 16px;
+    grid-template-columns: repeat(4, 1fr); }
+    .menu-types :not(:last-child) {
+      border-right: none; } }
+
+@media only screen and (max-width: 768px) {
+  .header-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px; }
+  .header-title {
+    padding-bottom: 40px;
+    font-size: 24px; }
+  .header-display {
+    display: none; }
+  .header-wheel {
+    left: 20px; }
+  .header-navigation {
+    width: 100%;
+    grid-template-columns: 4fr;
+    align-items: center; }
+    .header-navigation-table {
+      padding-bottom: 0; }
+      .header-navigation-table nav a {
+        font-size: 18px; }
+      .header-navigation-table:first-child {
+        padding-left: 0px;
+        padding-top: 190px; }
+      .header-navigation-table:last-child {
+        padding-right: 0px; }
+  .team-grid-image {
+    width: 100%; }
+    .team-grid-image img {
+      margin-left: 0; }
+    .team-grid-image-img1 {
+      width: 65%;
+      left: 30%;
+      top: 8px; }
+      .team-grid-image-img1 img {
+        width: 100%; }
+  .team-grid-table {
+    padding: 0; }
+  .bookForm {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .information {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .information-table {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+    .information-image {
+      width: 100%; }
+      .information-image img {
+        margin-left: 0; }
+      .information-image-img1 {
+        width: 65%;
+        left: 30%;
+        top: 8px; }
+        .information-image-img1 img {
+          width: 100%; }
+  .menu {
+    width: 100%; }
+    .menu-types {
+      width: 100%; }
+      .menu-types nav {
+        padding-right: 20px;
+        padding-left: 20px; }
+    .menu-subtitle {
+      width: 100%; }
+  .events h2 {
+    font-size: 20px;
+    left: 20%; }
+  .events-grid img {
+    width: 100%;
+    height: auto; }
+  .events-footer {
+    left: 0; }
+  .contact-title {
+    width: 100%; }
+  .contact-subtitle {
+    width: 100%; }
+  .contact-inputs {
+    width: 100%; }
+    .contact-inputs input {
+      height: 50px; }
+    .contact-inputs-main {
+      grid-template-columns: 1fr; }
+  .special {
+    width: 100%; }
+    .special-wrapper {
+      padding-right: 50px;
+      padding-left: 0;
+      width: 100%; }
+    .special h2 {
+      left: 10%; }
+    .special .info {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      .special .info-title {
+        width: 100%; }
+      .special .info-subtitle {
+        width: 100%; }
+      .special .info-text {
+        width: 100%; }
+    .special .img img {
+      width: 100%;
+      height: auto; } }
+
+@media only screen and (max-width: 480px) {
+  .contact-footer-contacts nav {
+    font-size: 20px; }
+    .contact-footer-contacts nav:nth-child(2n) {
+      font-size: 17px; }
+  .events h2 {
+    font-size: 21px;
+    left: 0; }
+  .menu-subtitle {
+    padding-bottom: 0; }
+  .menu-types {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+    padding-top: 0; }
+  .bookForm-form-title {
+    font-size: 38px;
+    padding-bottom: 10px; }
+  .bookForm-form-inputs {
+    width: 100%; }
+    .bookForm-form-inputs input {
+      width: 100%; }
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 1200px; }
+  .special h2 {
+    left: 0;
+    padding-left: 10px;
+    font-size: 25px; }
+  .header {
+    height: 900px; }
+    .header-wheel {
+      left: 10px; }
+    .header-title {
+      font-size: 10px; }
+      .header-title h1 {
+        padding-bottom: 10px;
+        font-size: 33px; }
+    .header-navigation-table nav a {
+      font-size: 14px; }
+    .header-buttons {
+      display: grid;
+      grid-template-columns: 1fr; }
+      .header-buttons button {
+        margin: 0 auto;
+        width: 90%; } }
